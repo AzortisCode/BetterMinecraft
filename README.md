@@ -1,0 +1,2 @@
+# BetterMinecraft
+BetterMinecraft - Minecraft Enhancements
