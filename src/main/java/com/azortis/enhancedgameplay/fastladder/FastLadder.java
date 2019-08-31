@@ -24,9 +24,18 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
+import org.bukkit.block.data.Directional;
+import org.bukkit.block.data.type.Ladder;
+import org.bukkit.entity.HumanEntity;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.event.player.PlayerTeleportEvent;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
+import org.bukkit.util.Vector;
 
 /**
  * @version 1.0.0-SNAPSHOT
@@ -42,37 +51,34 @@ public class FastLadder implements Module, Listener {
 
     @EventHandler
     public void onRightClick(PlayerInteractEvent event) {
-        if (event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.LADDER) {
-            event.getPlayer().teleport(findOpposite(event.getClickedBlock(), event.getPlayer().getLocation()));
+        if (event.getClickedBlock() != null && event.getAction() == Action.RIGHT_CLICK_BLOCK && event.getClickedBlock().getType() == Material.LADDER) {
+            Location l = findOpposite(event.getClickedBlock(), event.getPlayer().getLocation());
+            event.getPlayer().teleport(l, PlayerTeleportEvent.TeleportCause.PLUGIN);
+
         }
     }
 
     private Location findOpposite(Block b, Location loc) {
         Location temp = b.getLocation();
-        temp.setX(temp.getBlockX());
-        temp.setY(temp.getBlockY() - 1);
-        temp.setZ(temp.getBlockZ());
         if (temp.getBlock().getType() == Material.LADDER) {
-            while (temp.getBlock().getType() == Material.LADDER) {
-                temp.setY(temp.getBlockY() - 1);
-            }
-            temp.setY(temp.getBlockY() + 1);
-            loc.setY(temp.getY());
-            return loc;
-        } else {
-            temp.setY(temp.getBlockY() + 2);
+            loc.setX(b.getX() + 0.5);
+            loc.setZ(b.getZ() + 0.5);
+            temp.setY(temp.getBlockY() - 1);
             if (temp.getBlock().getType() == Material.LADDER) {
                 while (temp.getBlock().getType() == Material.LADDER) {
-                    temp.setY(temp.getBlockY() + 1);
+                    temp.setY(temp.getBlockY() - 1);
                 }
-                return temp;
+                loc.setY(temp.getBlockY() + 1);
+                return loc;
             }
+            temp.setY(temp.getBlockY() + 2);
+            while (temp.getBlock().getType() == Material.LADDER) {
+                temp.setY(temp.getBlockY() + 1);
+            }
+            loc.setY(temp.getBlockY());
+            return loc;
         }
-        temp.setY(temp.getBlockY() + 1);
-        loc.setY(temp.getY());
         return loc;
     }
-
-
 
 }
