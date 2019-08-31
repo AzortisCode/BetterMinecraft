@@ -17,18 +17,43 @@
 
 package com.azortis.betterminecraft;
 
+import com.azortis.betterminecraft.fastladder.FastLadder;
+import com.azortis.betterminecraft.settings.SettingsManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public final class BetterMinecraft extends JavaPlugin {
+    private SettingsManager settingsManager;
+    private Set<Module> modules = new HashSet<>();
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+
+
+        // Initialize Settings
+        settingsManager = new SettingsManager(this);
+
+        // Initialize Modules
+        initModules();
 
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        // todo : Unload modules.
+    }
+
+    public SettingsManager getSettingsManager() {
+        return settingsManager;
+    }
+
+    private void initModules() {
+        settingsManager.getModuleSettings().getEnabledModules().iterator().forEachRemaining(s -> {
+            if ("FastLadder".equals(s)) {
+                modules.add(new FastLadder().load(this));
+            }
+        });
     }
 }

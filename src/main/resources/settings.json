@@ -1,0 +1,24 @@
+{
+  "moduleSettings": {
+    "FastLadder": true
+  },
+  "commandSettings": {
+    "Unload": {
+      "Name:" : "bmunload",
+      "Description": "The command used to unload a module",
+      "Usage" : "/bmunload <module>"
+    },
+    "Load": {
+      "Name:" : "bmload",
+      "Description": "The command used to load a module",
+      "Usage" : "/bmload <module>",
+      "Aliases": "bmld"
+    },
+    "Reload": {
+      "Name" : "bmrl",
+      "Description": "Reloads all modules and settings during runtime.",
+      "Usage": "/bmrl"
+    }
+  },
+  "settingsVersion": 1.0
+}
