@@ -1,5 +1,5 @@
-# BetterMinecraft
-BetterMinecraft - Minecraft Enhancements
+# EnhancedGameplay
+EnhancedGameplay - Minecraft Enhancements
 
 ## Spigot
 Coming Soon!
