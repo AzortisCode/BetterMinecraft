@@ -4,18 +4,18 @@
   },
   "commandSettings": {
     "Unload": {
-      "Name:" : "bmunload",
+      "Name:" : "egunload",
       "Description": "The command used to unload a module",
       "Usage" : "/bmunload <module>"
     },
     "Load": {
-      "Name:" : "bmload",
+      "Name:" : "egload",
       "Description": "The command used to load a module",
       "Usage" : "/bmload <module>",
       "Aliases": "bmld"
     },
     "Reload": {
-      "Name" : "bmrl",
+      "Name" : "egrl",
       "Description": "Reloads all modules and settings during runtime.",
       "Usage": "/bmrl"
     }
