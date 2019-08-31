@@ -4,5 +4,5 @@ EnhancedGameplay - Minecraft Enhancements
 ## Spigot
 Coming Soon!
 
-## Support
-If you need help with this plugin please join our [discord](https://discord.gg/4vXUrS7) or take a look at the wiki (Coming Soon)
+## Support/Suggestions
+If you need help with this plugin or have suggestions please join our [discord](https://discord.gg/4vXUrS7)
