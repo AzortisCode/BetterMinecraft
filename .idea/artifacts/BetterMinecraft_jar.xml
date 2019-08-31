@@ -2,7 +2,7 @@
   <artifact type="jar" name="BetterMinecraft:jar">
     <output-path>$USER_HOME$/Desktop/Server/plugins</output-path>
     <root id="archive" name="BetterMinecraft.jar">
-      <element id="module-output" name="BetterMinecraft" />
+      <element id="module-output" name="EnhancedGameplay" />
     </root>
   </artifact>
 </component>

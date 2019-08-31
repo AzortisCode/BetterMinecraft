@@ -16,8 +16,8 @@
  *
  */
 
-package com.azortis.betterminecraft;
+package com.azortis.enhancedgameplay;
 
 public interface Module {
-    Module load(BetterMinecraft plugin);
+    Module load(EnhancedGameplay plugin);
 }

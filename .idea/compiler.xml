@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="BetterMinecraft" />
+        <module name="EnhancedGameplay" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="BetterMinecraft" target="1.8" />
+      <module name="EnhancedGameplay" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

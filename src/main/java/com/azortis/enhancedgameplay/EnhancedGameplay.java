@@ -15,16 +15,16 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.azortis.betterminecraft;
+package com.azortis.enhancedgameplay;
 
-import com.azortis.betterminecraft.fastladder.FastLadder;
-import com.azortis.betterminecraft.settings.SettingsManager;
+import com.azortis.enhancedgameplay.fastladder.FastLadder;
+import com.azortis.enhancedgameplay.settings.SettingsManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public final class BetterMinecraft extends JavaPlugin {
+public final class EnhancedGameplay extends JavaPlugin {
     private SettingsManager settingsManager;
     private Set<Module> modules = new HashSet<>();
 

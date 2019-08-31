@@ -1,6 +1,6 @@
-name: BetterMinecraft
+name: EnhancedGameplay
 version: ${project.version}
-main: com.azortis.betterminecraft.BetterMinecraft
+main: com.azortis.enhancedgameplay.EnhancedGameplay
 api-version: 1.13
-authors: [X1XX, Programming_, YourPalJake]
+authors: [X1XX, YourPalJake]
 description: A minecraft plugin that adds enhancements to minecraft.

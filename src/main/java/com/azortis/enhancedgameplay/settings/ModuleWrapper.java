@@ -16,7 +16,7 @@
  *
  */
 
-package com.azortis.betterminecraft.settings;
+package com.azortis.enhancedgameplay.settings;
 
 import java.util.ArrayList;
 import java.util.List;

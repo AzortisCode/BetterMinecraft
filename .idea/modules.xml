@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BetterMinecraft.iml" filepath="$PROJECT_DIR$/BetterMinecraft.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EnhancedGameplay.iml" filepath="$PROJECT_DIR$/EnhancedGameplay.iml" />
     </modules>
   </component>
 </project>
