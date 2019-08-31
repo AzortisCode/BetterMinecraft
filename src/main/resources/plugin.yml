@@ -1,0 +1,6 @@
+name: BetterMinecraft
+version: ${project.version}
+main: com.azortis.betterminecraft.BetterMinecraft
+api-version: 1.13
+authors: [X1XX, Programming_, YourPalJake]
+description: A minecraft plugin that adds enhancements to minecraft.
