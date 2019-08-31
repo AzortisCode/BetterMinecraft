@@ -16,10 +16,10 @@
  *
  */
 
-package com.azortis.betterminecraft.fastladder;
+package com.azortis.enhancedgameplay.fastladder;
 
-import com.azortis.betterminecraft.BetterMinecraft;
-import com.azortis.betterminecraft.Module;
+import com.azortis.enhancedgameplay.EnhancedGameplay;
+import com.azortis.enhancedgameplay.Module;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -34,7 +34,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 public class FastLadder implements Module, Listener {
 
     @Override
-    public Module load(BetterMinecraft plugin) {
+    public Module load(EnhancedGameplay plugin) {
         // Load anything needed here.
         Bukkit.getPluginManager().registerEvents(this, plugin);
         return this;

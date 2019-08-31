@@ -16,9 +16,9 @@
  *
  */
 
-package com.azortis.betterminecraft.settings;
+package com.azortis.enhancedgameplay.settings;
 
-import com.azortis.betterminecraft.BetterMinecraft;
+import com.azortis.enhancedgameplay.EnhancedGameplay;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -32,7 +32,7 @@ import java.util.Map;
 @SuppressWarnings("all")
 public class SettingsManager {
 
-    private BetterMinecraft plugin;
+    private EnhancedGameplay plugin;
     private File settingsFile;
     private File messageFile;
 
@@ -40,7 +40,7 @@ public class SettingsManager {
     private Map<String, Object> settingsMap;
     private Map<String, Object> messageMap;
 
-    public SettingsManager(BetterMinecraft plugin) {
+    public SettingsManager(EnhancedGameplay plugin) {
         this.plugin = plugin;
         if (plugin.getDataFolder().exists()) plugin.getDataFolder().mkdir();
         settingsFile = new File(plugin.getDataFolder(), "settings.json");

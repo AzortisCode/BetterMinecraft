@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="BetterMinecraft:jar">
+  <artifact type="jar" name="EnhancedGameplay:jar">
     <output-path>$USER_HOME$/Desktop/Server/plugins</output-path>
     <root id="archive" name="BetterMinecraft.jar">
       <element id="module-output" name="BetterMinecraft" />
