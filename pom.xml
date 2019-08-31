@@ -9,12 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-<<<<<<< HEAD
     <name>EnhancedGameplay</name>
 
     <description>A minecraft enhancement plugin which aims to enhance your minecraft experience.</description>
-=======
->>>>>>> 6645f40c0c815e3d1e678a726cc9225d9c93ead6
+
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
