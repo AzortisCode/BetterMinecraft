@@ -9,3 +9,6 @@ BetterMinecraft is a plugin which will only support the latest version, but will
 
 ## Disclaimer
 Please note that BetterDiscord is considered a violation of Discords TOS and in no way does Azortis recommend or endorse the use of BetterDiscord or any other program which might break Discords TOS.
+
+##Support
+If you need help with this plugin please join our [discord](https://discord.gg/4vXUrS7) or take a look at the wiki (Coming Soon)
